@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: rgb(206, 209, 226);
+  font-family: sans-serif;
+}
+
+.container {
+  width: 765px;
+  height: 300px;
+  margin: 10px auto;
+}
+
+.textarea {
+  width: 765px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 765px;
+  height: 250px;
+  background-color: rgb(172, 174, 188);
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(206, 209, 226);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0);
+  margin: 5px;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.key:hover {
+  background-color: rgb(152, 155, 169);
+}
+
+.key:active {
+  box-shadow: none;
+}
+
+.keydown {
+  background-color: rgb(152, 155, 169);
+  box-shadow: none;
+}
+
+.backspace {
+  width: 105px;
+  background-color: rgb(180, 182, 189);
+}
+
+.tab {
+  width: 50px;
+  background-color: rgb(180, 182, 189);
+}
+
+.del {
+  width: 45px;
+  background-color: rgb(180, 182, 189);
+}
+
+.caps {
+  width: 97.5px;
+  background-color: rgb(180, 182, 189);
+}
+
+.enter {
+  width: 97.5px;
+  background-color: rgb(180, 182, 189);
+}
+
+.shift {
+  width: 97.5px;
+  background-color: rgb(180, 182, 189);
+}
+
+.space {
+  width: 347px;
+}
+
+.black-key {
+  background-color: rgb(180, 182, 189);
+}
