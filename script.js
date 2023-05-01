@@ -22,21 +22,27 @@ function createContent() {
 
     if (keys[i] == 'Backspace') {
       key.classList.add('backspace');
+      key.classList.add('black-key');
     }
     if (keys[i] == 'Tab') {
       key.classList.add('tab');
+      key.classList.add('black-key');
     }
     if (keys[i] == 'Del') {
       key.classList.add('del');
+      key.classList.add('black-key');
     }
     if (keys[i] == 'Caps Lock') {
       key.classList.add('caps');
+      key.classList.add('black-key');
     }
     if (keys[i] == 'Enter') {
       key.classList.add('enter');
+      key.classList.add('black-key');
     }
     if (keys[i] == 'Shift') {
       key.classList.add('shift');
+      key.classList.add('black-key');
     }
     if (keys[i] == '▲' || keys[i] == '◄' || keys[i] == '▼' || keys[i] == '►' || keys[i] == 'Ctrl' || keys[i] == 'Win' || keys[i] == 'Alt') {
       key.classList.add('black-key');
@@ -107,3 +113,22 @@ document.addEventListener('keyup', (event) => {
     elem.classList.remove('keydown');
   })
 });
+
+//mouse clicks on buttons of the virtual keyboard or pressing buttons on a physical keyboard inputs characters to the input field (text area)
+
+function inputTextarea() {
+  const key = document.querySelectorAll('.key');
+  const input = document.querySelector('.textarea');
+    
+  key.forEach((elem) => {
+    elem.addEventListener('click', () => {
+      if (elem.classList.contains('black-key')) {
+        // ...
+      } else {
+        input.value += elem.innerHTML;
+      }
+    })
+  })
+}
+
+inputTextarea();
