@@ -50,6 +50,11 @@
   box-shadow: none;
 }
 
+.keydown {
+  background-color: rgb(152, 155, 169);
+  box-shadow: none;
+}
+
 .backspace {
   width: 105px;
   background-color: rgb(180, 182, 189);
